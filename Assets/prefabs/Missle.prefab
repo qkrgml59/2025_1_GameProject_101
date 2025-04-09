@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8972774003270539982
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_Name
+      value: Missle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      propertyPath: m_TagString
+      value: Missile
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7207824210842834406}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8389918354442467772}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4126032440011995787}
+  m_SourcePrefab: {fileID: 100100000, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+--- !u!1 &8089832428727822239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f1cb6542f3a888d48bafc4491281b554, type: 3}
+  m_PrefabInstance: {fileID: 8972774003270539982}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7207824210842834406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089832428727822239}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.53, y: 0.48, z: 1.01}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8389918354442467772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089832428727822239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e6cbb017b8d3e4b85ec6a84458226e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  timer: 5
+--- !u!114 &-4126032440011995787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089832428727822239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c2d4b08e021b642adaee474d60668a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinPrefabs: {fileID: 4982574716388730833, guid: ddb2fc48b7d2e1b4e8dc85eacd6ba1b9, type: 3}
+  MissilePrefabs: {fileID: 8089832428727822239}
+  minSpawnInterval: 0.5
+  maxSpawnInterval: 2
+  coinSpawnChance: 50
+  timer: 0
+  nextSpawnTime: 0

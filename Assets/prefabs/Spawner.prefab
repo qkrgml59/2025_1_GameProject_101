@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinPrefabs: {fileID: 4982574716388730833, guid: ddb2fc48b7d2e1b4e8dc85eacd6ba1b9, type: 3}
-  minSpawnlnterval: 0.5
-  maxSpawnlnterval: 2
+  minSpawnInterval: 0.5
+  maxSpawnInterval: 2
   timer: 0
   nextSpawnTime: 0

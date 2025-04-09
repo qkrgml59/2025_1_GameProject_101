@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a11f0dc1acad681438247470d685c4f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.31
+      value: 2.74
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a11f0dc1acad681438247470d685c4f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -65,7 +65,7 @@ PrefabInstance:
       addedObject: {fileID: 9141135024276686519}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a11f0dc1acad681438247470d685c4f7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1782087137407180133}
+      addedObject: {fileID: 8466974015012055285}
   m_SourcePrefab: {fileID: 100100000, guid: a11f0dc1acad681438247470d685c4f7, type: 3}
 --- !u!1 &4982574716388730833 stripped
 GameObject:
@@ -91,9 +91,9 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 0.15}
-  m_Center: {x: 0, y: 0.5, z: 0.05}
---- !u!114 &1782087137407180133
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8466974015012055285
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4982574716388730833}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 996ad52c58eb5604cbd9f36e606435c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 10e6cbb017b8d3e4b85ec6a84458226e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5

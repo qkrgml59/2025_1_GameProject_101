@@ -16,7 +16,7 @@ public class Ball : MonoBehaviour
         
     }
      
-     void OnColisionEnter (Collision collision)
+     void OnCollisionEnter (Collision collision)
     {
         if(collision.gameObject.tag == "Ground")
         {
@@ -26,7 +26,7 @@ public class Ball : MonoBehaviour
     }
     private void ONnTriggerEnter(Collider other)
     {
-        Debug.Log("x트리거 안에 들어옴");
+        Debug.Log("트리거 안에 들어옴");
     }
 
 private void OnTriggerEnter(Collider other)
