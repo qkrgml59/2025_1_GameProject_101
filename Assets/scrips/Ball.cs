@@ -15,24 +15,19 @@ public class Ball : MonoBehaviour
     {
         
     }
-     
-     void OnCollisionEnter (Collision collision)
+
+    void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground")
         {
-            Debug.Log("ë•…ê³¼ ì¶©ëŒ");
+            Debug.Log("¶¥°ú Ãæµ¹");
         }
-
     }
-    private void ONnTriggerEnter(Collider other)
+
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("íŠ¸ë¦¬ê±° ì•ˆì— ë“¤ì–´ì˜´");
+        Debug.Log("Æ®¸®°Å ¾È¿¡ µé¾î¿È");
     }
-
-private void OnTriggerEnter(Collider other)
-{
-    Debug.Log("íŠ¸ë¦¬ê±° ì•ˆì— ë“¤ì–´ì˜´");
-}
 
 
 }

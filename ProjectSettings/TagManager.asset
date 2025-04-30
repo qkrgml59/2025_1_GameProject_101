@@ -7,7 +7,6 @@ TagManager:
   - Ground
   - Coin
   - Door
-  - Missile
   layers:
   - Default
   - TransparentFX

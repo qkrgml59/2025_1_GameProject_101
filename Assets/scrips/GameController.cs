@@ -2,26 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameController : MonoBehaviour
+public class Gamecontroller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float GameTimer = 0.0f;
+    public GameObject MonsterG0;
 
-    // Update is called once per frame
+
+    
+    
     void Update()
-    {
-        if(Input.GetMouseButtonDown(0))
         {
-          RaycastHit hit; 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        GameTimer -= Time.deltaTime;
 
-            if(Physics.Raycast(ray, out hit))
+        if(GameTimer <= 0)
+        {
+            GameTimer = 3.0f;
+
+            GameObject Temp = Instantiate(MonsterG0);
+            Temp.transform.position = new Vector3(Random.Range(-10, 10), Random.Range(-4, 4), 0.0f);
+        }
+            if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log(hit.collider.name);
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out hit))
+                {
+                    if (hit.collider != null)
+                    {
+                        hit.collider.enabled = false;
+                    }
+                }
             }
         }
-    }
+    
 }
